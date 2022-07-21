@@ -6,8 +6,8 @@ class Configuration:
         # Initialize the data related variables used in the notebook
         # For reading the ndvi, pan and annotated images generated in the Preprocessing step.
         # In most cases, they will take the same value as in the config/Preprocessing.py
-        self.base_dir = ''
-        self.image_type = '.png'
+        self.base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleResults-Preprocessing'
+        self.image_type = '.png' 
         self.ndvi_fn = 'ndvi'
         self.pan_fn = 'pan'
         self.annotation_fn = 'annotation'
