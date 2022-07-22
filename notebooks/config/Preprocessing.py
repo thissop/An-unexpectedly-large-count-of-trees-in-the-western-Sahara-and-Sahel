@@ -10,19 +10,19 @@ class Configuration:
     '''
     def __init__(self):
         # For reading the training areas and polygons
-        self.training_base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleAnnotations' 
-        self.training_area_fn = 'area.gpkg' #'training_areas_example.shp'
-        self.training_polygon_fn = 'test.gpkg' #'training_polygons_example.shp'
+        self.training_base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/data/first_mosaic/annotations/ready/vectors' 
+        self.training_area_fn = 'thaddaeus_vector_rectangle_10.gpkg' #'training_areas_example.shp'
+        self.training_polygon_fn = 'thaddaeus_training_annotations_10.gpkg' #'training_polygons_example.shp'
 
         # For reading the VHR images
         self.bands = [0]
-        self.raw_image_base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleAnnotations'
+        self.raw_image_base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/data/first_mosaic/annotations/ready/images'
         self.raw_image_file_type = '.tif'
-        self.raw_ndvi_image_prefix = 'ndvi_SSA_32628_010_003_mosaic_2_3_mask'
-        self.raw_pan_image_prefix = 'pan_SSA_32628_010_003_mosaic_2_3_mask'
+        self.raw_ndvi_image_prefix = 'ndvi_thaddaeus_training_area'
+        self.raw_pan_image_prefix = 'pan_thaddaeus_training_area'
 
         # For writing the extracted images and their corresponding annotations and boundary file
-        self.path_to_write = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleResults-Preprocessing'
+        self.path_to_write = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/data/first_mosaic/annotations/ready/temp_output'
         self.show_boundaries_during_processing = False
         self.extracted_file_type = '.tif' # .png' 
         self.extracted_ndvi_filename = 'ndvi'

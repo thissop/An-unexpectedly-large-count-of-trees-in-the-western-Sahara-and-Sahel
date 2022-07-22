@@ -6,12 +6,12 @@ class Configuration:
         # Initialize the data related variables used in the notebook
         # For reading the ndvi, pan and annotated images generated in the Preprocessing step.
         # In most cases, they will take the same value as in the config/Preprocessing.py
-        self.base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleResults-Preprocessing'
+        self.base_dir = '/mnt/c/Users/Research/Documents/GitHub/africa-trees/data/first_mosaic/annotations/ready/output' #'/mnt/c/Users/Research/Documents/GitHub/africa-trees/SampleResults-Preprocessing'
         self.image_type = '.png' 
         self.ndvi_fn = 'ndvi'
         self.pan_fn = 'pan'
         self.annotation_fn = 'annotation'
-        self.weight_fn = 'boundary'
+        self.weight_fn = 'boundary' 
         
         # Patch generation; from the training areas (extracted in the last notebook), we generate fixed size patches.
         # random: a random training area is selected and a patch in extracted from a random location inside that training area. Uses a lazy stratergy i.e. batch of patches are extracted on demand.
