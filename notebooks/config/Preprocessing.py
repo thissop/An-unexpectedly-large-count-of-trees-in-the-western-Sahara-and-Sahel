@@ -4,7 +4,7 @@ import os
 
 # Configuration of the parameters for the 1-Preprocessing.ipynb notebook
 class Configuration:
-    '''
+    ''' 
     Configuration for the first notebook.
     Copy the configTemplate folder and define the paths to input and output data. Variables such as raw_ndvi_image_prefix may also need to be corrected if you are use a different source.
     '''
